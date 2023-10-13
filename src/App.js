@@ -6,10 +6,12 @@ import Home from "./pages";
 import About from "./pages/about";
 import GlobalStyles from "./styles/GlobalStyles.styles";
 import "./App.css";
+import { ChakraProvider, theme } from "@chakra-ui/react";
 
 function App() {
   return (
     <>
+      <ChakraProvider theme={theme} />
       <Reset />
       <GlobalStyles />
       <Layout>
