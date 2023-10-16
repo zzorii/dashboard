@@ -4,9 +4,9 @@ import { Reset } from "styled-reset";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages";
 import About from "./pages/about";
-import GlobalStyles from "./styles/GlobalStyles.styles";
 import "./App.css";
 import { ChakraProvider, theme } from "@chakra-ui/react";
+import GlobalStyles from "./assets/styles/GlobalStyles.styles";
 
 function App() {
   return (
