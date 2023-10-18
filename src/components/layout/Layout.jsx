@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./header/Header";
-import Footer from "./footer/Footer";
 import styled from "styled-components";
 
 const Layout = (props) => {
@@ -8,7 +7,6 @@ const Layout = (props) => {
     <Wrap>
       <Header />
       <main id="main">{props.children}</main>
-      <Footer />
     </Wrap>
   );
 };
