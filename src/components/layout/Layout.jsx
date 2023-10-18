@@ -16,10 +16,12 @@ const Layout = (props) => {
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
+  padding-left: 290px;
   min-height: 100vh;
+  background: var(--secondary-grey-300);
   #main {
     flex: 1;
-    padding: 30px;
+    padding: 50px 20px;
   }
 `;
 

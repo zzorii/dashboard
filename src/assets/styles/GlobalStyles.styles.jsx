@@ -15,6 +15,7 @@ ${reset}
         // --S_Light: red;
 
         --secondary-grey-600: #A3AED0;
+        --secondary-grey-700: ##707EAE;
         --secondary: #FCA311;
         --secondary-light: #FFBA32;
         --secondary-dark: #C28400;
@@ -51,7 +52,7 @@ ${reset}
 
 
     body {
-         background: url(2.png) no-repeat 0 0 !important;
+         background: url(3.png) no-repeat 0 0 !important;
          #root {
             opacity: 0.8 !important;
          }

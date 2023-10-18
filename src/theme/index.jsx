@@ -1,29 +1,11 @@
 import { extendTheme } from "@chakra-ui/react";
-import { containerTheme } from "./components/container";
-// import { tabsTheme } from "./components/tabs";
-// import { tableTheme } from "./components/table";
-// import { buttonTheme } from "./components/button";
-// import { textTheme } from "./components/Text";
-// import { numberInputTheme } from "./components/number-input";
-// import { inputTheme } from "./components/input";
-// import { tooltipTheme } from "./components/tooltip";
-// import { radioTheme } from "./components/radio";
-// import { modalTheme } from "./components/modal";
-// import { alertTheme } from "./components/alert";
+import { textTheme } from "./components/Text";
+// import { containerTheme } from './components/container';
 
 const theme = extendTheme({
   components: {
-    Container: containerTheme,
-    // Tabs: tabsTheme,
-    // Table: tableTheme,
-    // Button: buttonTheme,
-    // Text: textTheme,
-    // Input: inputTheme,
-    // NumberInput: numberInputTheme,
-    // Tooltip: tooltipTheme,
-    // Radio: radioTheme,
-    // Modal: modalTheme,
-    // Alert: alertTheme,
+    // Container: containerTheme,
+    Text: textTheme,
   },
   styles: {
     global: {
@@ -36,10 +18,11 @@ const theme = extendTheme({
         fontFamily: "Poppins",
         fontSize: "16px",
         fontWeight: "400",
+        color: "#2B3674",
       },
       // styles for the `a`
       a: {
-        color: "#000000",
+        color: "#2B3674",
         _hover: {
           textDecoration: "none !important",
         },
@@ -53,12 +36,14 @@ const theme = extendTheme({
     4: "25px",
   },
   colors: {
-    text_default: "#3A3A3A",
+    text_default: "#3a3a3a",
     black: "#000000",
     text_Gray02: "#000001",
     Secondary_V: "#A796FF",
     primary_V: "#6F36FF",
     primary_b: "#413FA0",
+    secondary_grey_700: "#707EAE",
   },
 });
+
 export default theme;

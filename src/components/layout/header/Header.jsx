@@ -7,7 +7,7 @@ import { Divider, Heading } from "@chakra-ui/react";
 
 const Header = () => {
   return (
-    <HeaderWapper>
+    <HeaderWrapper>
       <HeaderStyle as="h1" id="logo">
         <Link to="/">
           <span>horizon</span> free
@@ -16,7 +16,7 @@ const Header = () => {
       {/* <DividerCus /> */}
       <Divider borderColor="red" />
       <Gnb />
-    </HeaderWapper>
+    </HeaderWrapper>
   );
 };
 
@@ -28,6 +28,7 @@ const HeaderStyle = styled(Heading)`
     text-align: center;
     font-size: 26px;
     color: var(--primary-dark);
+    margin-bottom: 68px;
     span {
       font-weight: 700;
     }
@@ -37,7 +38,7 @@ const HeaderStyle = styled(Heading)`
   }
 `;
 
-const HeaderWapper = styled.header`
+const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   left: 0;

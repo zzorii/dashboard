@@ -59,23 +59,25 @@ const Gnb = () => {
 
 const GnbWrapper = styled.nav`
   ul {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-top: 67px;
     li {
-      margin-left: 5px;
+      position: relative;
+      margin-left: 3px;
+      &::after {
+        opacity: 0;
+        transition: opacity 1s;
+      }
       &.active {
         &::after {
           content: "";
           position: absolute;
-          top: 0;
-          right: 0;
+          top: 50%;
+          right: -32px;
           transform: translateY(-50%);
-          border-radius: 25px;
           width: 4px;
           height: 36px;
-          color: var(--primary);
+          border-radius: 25px;
+          background: var(--primary);
+          opacity: 1;
         }
         a {
           color: var(--primary-dark);
@@ -91,15 +93,15 @@ const GnbWrapper = styled.nav`
         gap: 10px;
         padding: 16px 0;
         color: var(--secondary-grey-600);
+        font-weight: 500;
         &:hover {
           color: var(--primary-dark);
         }
-        svg {
-          font-size: 20px;
-        }
+      }
+      svg {
+        font-size: 20px;
       }
     }
   }
 `;
-
 export default Gnb;

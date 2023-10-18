@@ -1,23 +1,21 @@
 import React from "react";
 import Layout from "./components/layout/Layout";
-import { Reset } from "styled-reset";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages";
-// import About from "./pages/about";
-import "./App.css";
-import { ChakraProvider, theme } from "@chakra-ui/react";
+import About from "./pages/about";
+import { ChakraProvider, CSSReset } from "@chakra-ui/react";
 import GlobalStyles from "./assets/styles/GlobalStyles.styles";
+import theme from "./theme/";
 import MarketPlace from "./pages/MarketPlace";
 import Tables from "./pages/Tables";
-import Profile from "./pages/Profile";
 import Kanban from "./pages/Kanban";
+import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 
 function App() {
   return (
-    <>
-      <ChakraProvider theme={theme} />
-      <Reset />
+    <ChakraProvider theme={theme}>
+      <CSSReset />
       <GlobalStyles />
       <Layout>
         <Routes>
@@ -29,8 +27,9 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
         </Routes>
       </Layout>
-    </>
+    </ChakraProvider>
   );
 }
 
 export default App;
+// 여기는 <layout/> 이렇게 닫아주면 안된다. header나 footer는 그 자체가 컴포넌트라서 자식이 필요 없기에 </header> </footer>라고 닫아줘도 되는데 layout은 자식이 있기에 그냥 태그로 해줘야한다.
