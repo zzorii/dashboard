@@ -21,8 +21,8 @@ const Gnb = () => {
             Dashboard
           </Link>
         </li>
-        <li className={location.pathname === "/maket" ? "active" : ""}>
-          <Link to="/maket">
+        <li className={location.pathname === "/marketplace" ? "active" : ""}>
+          <Link to="/marketplace">
             <BsFillCartFill />
             NFT Marketplace
           </Link>
@@ -46,10 +46,10 @@ const Gnb = () => {
             Profile
           </Link>
         </li>
-        <li className={location.pathname === "/sighin" ? "active" : ""}>
-          <Link to="/sighin">
+        <li className={location.pathname === "/signin" ? "active" : ""}>
+          <Link to="/signin">
             <BiSolidLockOpen />
-            Sigh in
+            Sign in
           </Link>
         </li>
       </ul>

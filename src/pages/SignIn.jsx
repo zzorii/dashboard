@@ -1,10 +1,11 @@
 import React from "react";
+import Layout from "../components/layout/Layout";
 
 const SignIn = () => {
   return (
-    <div>
-      <h2>SignIn</h2>
-    </div>
+    <Layout title={"Sign In"} pagename="Sign In">
+      <h2>Sign In</h2>
+    </Layout>
   );
 };
 

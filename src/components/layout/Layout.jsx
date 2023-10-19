@@ -1,12 +1,22 @@
 import React from "react";
 import Header from "./header/Header";
 import styled from "styled-components";
+import { Box } from "@chakra-ui/react";
+import History from "../common/History";
+import Title from "../common/Title";
 
-const Layout = (props) => {
+const Layout = ({ title, pagename, children }) => {
+  // const {pagename, children} = props;
   return (
     <Wrap>
       <Header />
-      <main id="main">{props.children}</main>
+      <main id="main">
+        <Box p="0 0 50px 10px">
+          <History pagename={pagename} />
+          <Title title={title} />
+        </Box>
+        {children}
+      </main>
     </Wrap>
   );
 };
@@ -15,10 +25,9 @@ const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 290px;
-  min-height: 100vh;
   background: var(--secondary-grey-300);
   #main {
-    flex: 1;
+    min-height: 100vh;
     padding: 50px 20px;
   }
 `;

@@ -1,19 +1,11 @@
 import React from "react";
-import { Box } from "@chakra-ui/react";
-import History from "../components/title/History";
-import Title from "../components/title/Title";
+import Layout from "../components/layout/Layout";
 
 const MarketPlace = () => {
   return (
-    <>
-      <Box pl="10px">
-        <History pagename="Marketplace" />
-        <Title
-          title="Marketplace"
-          desc="이 페이지는 marketplace 페이지 입니다."
-        />
-      </Box>
-    </>
+    <Layout title={"NFT MarketPlace"} pagename={"NFT MarketPlace"}>
+      MarketPlace
+    </Layout>
   );
 };
 

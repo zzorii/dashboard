@@ -51,12 +51,12 @@ ${reset}
     }
 
 
-    body {
-         background: url(3.png) no-repeat 0 0 !important;
-         #root {
-            opacity: 0.8 !important;
-         }
-     } 
+    // body {
+    //      background: url(3.png) no-repeat 0 0 !important;
+    //      #root {
+    //         opacity: 0.8 !important;
+    //      }
+    //  } 
 
 /* public에 넣은 이미지와 src에 넣은 이미지는 경로찾기가 다르다 public은 html처럼! 단 ./public/2.jpg가 아니라 2.jpg 넣거나 public 안에 images 폴더 안이면 images/2.jpg 이런 식으로! 완전 상대경로로 쓰는 것이 아니다. */
     *{
