@@ -14,6 +14,11 @@ const baseStyle = definePartsStyle({
     borderCollapse: "collapse",
     width: "full",
   },
+  thead: {
+    // position: 'sticky',
+    // top: 0,
+    // zIndex: '1',
+  },
   th: {
     fontFamily: "heading",
     fontWeight: "bold",
@@ -42,15 +47,29 @@ const variantSimple = definePartsStyle((props) => {
   const { colorScheme: c } = props;
 
   return {
+    thead: {
+      bg: "white",
+    },
     th: {
-      color: mode("gray.600", "gray.400")(props),
+      p: "10px",
+      color: "#A3AED0",
       borderBottom: "1px",
       borderColor: mode(`${c}.100`, `${c}.700`)(props),
       ...numericStyles,
     },
+    tbody: {
+      tr: {
+        "&:first-child": {
+          td: {
+            pt: "20px",
+          },
+        },
+      },
+    },
     td: {
-      borderBottom: "1px",
-      borderColor: mode(`${c}.100`, `${c}.700`)(props),
+      p: "10px",
+      borderBottom: "none",
+      // borderColor: mode(`${c}.100`, `${c}.700`)(props),
       ...numericStyles,
     },
     caption: {

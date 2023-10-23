@@ -38,7 +38,8 @@ const theme = extendTheme({
     4: "25px",
   },
   colors: {
-    secondary_grey_700: "red",
+    secondary_grey_700: "#707EAE",
+    Secondary_Grey_600: "#A3AED0",
   },
 });
 
